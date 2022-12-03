@@ -1,1 +1,5 @@
-# TAN_PAJAK_PD3814
+# Tworzenie zaplikacji .NET 
+Autor repozytorium: Damian Zacheja
+Numer: PD3814
+## Spis: 
+- [Zadanie 1 Wydobywanie numerów telefonów](https://github.com/DZacheja/TAN_PAJAK_PD3814/blob/master/1%20-%20Numer%20telefonu%20na%20stronie/Program.cs)
