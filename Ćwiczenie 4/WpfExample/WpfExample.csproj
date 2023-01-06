@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Images\anon.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\photo1.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

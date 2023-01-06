@@ -53,7 +53,7 @@ namespace WpfExample.Models
             }
         }
 
-        private DateTime _birthDate;
+        private DateTime _birthDate = DateTime.Now.AddYears(-50);
 
         public DateTime BirthDate
         {
@@ -62,7 +62,7 @@ namespace WpfExample.Models
         }
 
 
-        private string _photoPath;
+        private string _photoPath = System.IO.Path.Combine(Environment.CurrentDirectory, "Images", "anon.jpg");
 
         public string PhotoPath
         {
@@ -126,7 +126,7 @@ namespace WpfExample.Models
             }
         }
 
-        private string _status;
+        private string _status ="Aktywny";
 
         public string Status
         {

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +16,7 @@ using System.Windows.Shapes;
 using WpfExample.Interfaces;
 using WpfExample.Models;
 using WpfExample.ViewModels;
+using Path = System.IO.Path;
 
 namespace WpfExample
 {
@@ -44,7 +47,30 @@ namespace WpfExample
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
+            _viewModel.Student.IdStudent = MainWindow.currentIndex + 1;
+            MainWindow.currentIndex++;
             Close();
+        }
+
+        private void btnSelectImage_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "Images (*.jpg)|*.jpg";
+            fileDialog.RestoreDirectory = true;
+            fileDialog.Multiselect = false;
+            if(fileDialog.ShowDialog() == true)
+            {
+                string newFileName = Path.GetFileName(fileDialog.FileName);
+                newFileName = Path.Combine(Environment.CurrentDirectory,"Images", newFileName);
+                try
+                {
+                    File.Copy(fileDialog.FileName, newFileName);
+                    _viewModel.Student.PhotoPath = newFileName;
+                }catch {
+                    MessageBox.Show("Nie udało się skopiować pliku do folderu z programem.");
+                }
+
+            }
         }
     }
 }

@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfExample"
+        xmlns:locals="clr-namespace:WpfExample.ViewModels"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Dodaj studenta" Height="250" Width="300">
+        Title="Dodaj studenta" Height="380" Width="400">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -15,13 +16,72 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition MinHeight="100" Height="Auto"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <Label Content="Numer Indeksu" Margin="0 0 20 0"/>
+        <TextBox x:Name="IndexNumber" Text="{Binding Student.IndexNumber}" Grid.Column="1" Margin="2"/>
 
-        <Label Content="Imię" Grid.Row="0" Grid.Column="0" Margin="0 0 20 0" />
-        <TextBox x:Name="FirstNameTextBox" Text="{Binding Student.FirstName}" Grid.Row="0" Grid.Column="1" />
+        <Label Content="Imię" Grid.Row="1" Grid.Column="0" Margin="0 0 20 0" />
+        <TextBox x:Name="FirstNameTextBox" Text="{Binding Student.FirstName}" Grid.Row="1" Grid.Column="1" Margin="2"/>
 
-        <Button Content="Ok" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Padding="10" Margin="0 10 0 0" Click="OkButton_Click" />
-        <Button Content="Anuluj" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Padding="10" Margin="0 10 0 0" Click="AnulujButton_Click" />
+        <Label Content="Nazwisko" Grid.Row="2" Grid.Column="0" Margin="0 0 20 0" />
+        <TextBox x:Name="SurnnameTextBox" Text="{Binding Student.LastName}" Grid.Row="2" Grid.Column="1" Margin="2"/>
+
+        <Label Content="Data Urodzin" Grid.Row="3" Grid.Column="0" Margin="0 0 20 0" />
+        <DatePicker x:Name="BirthDate" DisplayDate="{Binding Student.BirthDate}" Grid.Row="3" Grid.Column="1" Margin="0 0 20 0" />
+
+        <Label Content="Miasto" Grid.Row="4" Grid.Column="0" Margin="0 0 20 0" />
+        <TextBox x:Name="CityTextBox" Text="{Binding Student.City}" Grid.Row="4" Grid.Column="1" Margin="2"/>
+
+        <Label Content="Status" Grid.Row="5" Grid.Column="0" Margin="0 0 20 0" />
+        <CheckBox x:Name="chkStatus" Grid.Row="5" Grid.Column="5" IsChecked="{Binding Status}">
+            <CheckBox.Template>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="StsBrd"  Width="50" Background="Green" BorderThickness="0.5" BorderBrush="Black" CornerRadius="10" Height="20">
+                            <Ellipse x:Name="stsEll" Fill="Black" Width="20" Height="20" HorizontalAlignment="Left"/>
+                        </Border>
+                        <TextBox x:Name="CityTextBox" Text="Aktywny" Grid.Column="1" Margin="2" BorderBrush="Transparent"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="HorizontalAlignment" TargetName="stsEll" Value="Left"/>
+                            <Setter Property="Text" TargetName="CityTextBox" Value="Aktywny" />
+                            <Setter Property="Background" TargetName="StsBrd" Value="Green"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter Property="HorizontalAlignment" TargetName="stsEll" Value="Right"/>
+                            <Setter Property="Text" TargetName="CityTextBox" Value="Skreślony" />
+                            <Setter Property="Background" TargetName="StsBrd" Value="Red"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </CheckBox.Template>
+        </CheckBox>
+
+
+        <Label Content="Zdjęcie" Grid.Row="6" Grid.Column="0" Margin="0 0 20 0" />
+        <Grid Grid.Row="6" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnSelectImage" Height="20" Content="Wybierz plik ze zdjęciem" Click="btnSelectImage_Click"/>
+            <Image Source="{Binding Student.PhotoPath}" Width="100" Grid.Row="1" Stretch="Fill"/>
+        </Grid>
+        
+
+        <Button Content="Ok" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Padding="10" Margin="0 10 0 0" Click="OkButton_Click" />
+        <Button Content="Anuluj" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="10" Margin="0 10 0 0" Click="AnulujButton_Click" />
 
     </Grid>
 </Window>
