@@ -58,7 +58,7 @@ namespace StudentsAPI.Controllers
             {
                 _students.Add(student);
                 SaveStudents();
-                return Ok(student);
+                return Created(student);
             } else
             {
                 return UnprocessableEntity(msg);
