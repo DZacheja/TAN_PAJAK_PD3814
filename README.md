@@ -8,4 +8,4 @@ Numer: PD3814
 
 - [Zadanie 3 WindowsForms](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%203/Dziekanat)
 
-- [Zadanie 4 WPF](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%204/)
+- [Zadanie 4 WPF](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%204/WpfExample)
