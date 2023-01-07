@@ -13,3 +13,5 @@ Numer: PD3814
 - [Zadanie 5 REST API](https://github.com/DZacheja/TAN_PAJAK_PD3814/blob/master/%C4%86wiczenie%205/StudentsAPI/Controllers/StudentsController.cs)
 
 - [Zadanie 6 Podstawy komunikacji z SQL Server](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%206/AnimalAPI)
+
+- [Zadanie 7 wykorzystanie transakcji i procedur składowanych](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%207/WarehouseAPI)
