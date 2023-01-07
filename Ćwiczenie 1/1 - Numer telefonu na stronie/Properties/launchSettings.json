@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "1 - Numer telefonu na stronie": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:61406;http://localhost:61412"
+    }
+  }
+}
