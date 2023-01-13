@@ -58,7 +58,7 @@ namespace StudentsAPI.Controllers
             {
                 _students.Add(student);
                 SaveStudents();
-                return Created(student);
+                return StatusCode(201,student); //Created
             } else
             {
                 return UnprocessableEntity(msg);

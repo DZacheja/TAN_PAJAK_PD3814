@@ -372,8 +372,6 @@ namespace LinqTutorials
                 .Where(g => g.count == 5 || g.count == 0)
                 .Select(g => g.dept)
                 .ToList();
-                
-            //result =
             return result;
         }
     }
