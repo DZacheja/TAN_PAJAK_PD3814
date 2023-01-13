@@ -16,4 +16,4 @@ Numer: PD3814
 
 - [Zadanie 7 wykorzystanie transakcji i procedur składowanych](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%207/WarehouseAPI)
 
-- [Zadanie 8 LINQU](https://github.com/DZacheja/TAN_PAJAK_PD3814/blob/master/%C4%86wiczenie%208/LinqCwiczenia2/LinqTutorials/LinqTasks.cs)
+- [Zadanie 8 LINQ](https://github.com/DZacheja/TAN_PAJAK_PD3814/blob/master/%C4%86wiczenie%208/LinqCwiczenia2/LinqTutorials/LinqTasks.cs)
