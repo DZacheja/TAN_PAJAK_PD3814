@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace WarehouseAPI
+namespace WarehouseAPI.Exceptions
 {
     [Serializable]
     internal class NotFoundException : Exception

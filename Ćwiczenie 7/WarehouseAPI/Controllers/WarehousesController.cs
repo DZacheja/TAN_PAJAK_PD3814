@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
+using WarehouseAPI.Exceptions;
 using WarehouseAPI.Models;
 using WarehouseAPI.Services;
 
@@ -15,20 +16,23 @@ namespace WarehouseAPI.Controllers
 
         public WarehousesController(IDatabaseService databaseService)
         {
-            _databaseService = databaseService; 
+            _databaseService = databaseService;
         }
 
         [HttpPut]
-        public async Task<IActionResult> RegisterNewProduct([FromBody]NewProduct product)
+        public async Task<IActionResult> RegisterNewProduct([FromBody] NewProduct product)
         {
             try
             {
                 int productID = await _databaseService.RegisterNewProduct(product);
                 return Ok(productID);
-            }catch(NotFoundException ex)
+            } catch (NotFoundException nfx)
             {
-                return StatusCode(404, ex.Message);
-            }catch(Exception ex)
+                return StatusCode(404, nfx.Message);
+            } catch (GoneException gx)
+            {
+                return StatusCode(410, gx.Message);
+            } catch (Exception ex)
             {
                 return BadRequest(ex.Message);
 

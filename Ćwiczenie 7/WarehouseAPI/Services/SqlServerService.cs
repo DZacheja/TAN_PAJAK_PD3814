@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WarehouseAPI.Exceptions;
 using WarehouseAPI.Models;
 
 namespace WarehouseAPI.Services
@@ -151,7 +152,7 @@ namespace WarehouseAPI.Services
                 {
                     await tran.RollbackAsync();
                     cmd.Dispose();
-                    throw new Exception("Zamówienie zostało już zrealizowane!");
+                    throw new GoneException("Zamówienie zostało już zrealizowane!");
                 }
 
                 cmd.CommandText = "UPDATE [Order] SET FulfilledAt=@now";
