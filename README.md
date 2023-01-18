@@ -19,3 +19,5 @@ Numer: PD3814
 - [Zadanie 8 LINQ](https://github.com/DZacheja/TAN_PAJAK_PD3814/blob/master/%C4%86wiczenie%208/LinqCwiczenia2/LinqTutorials/LinqTasks.cs)
 
 - [Zadanie 9 EntityFramework Core - Database first](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%209/ClientTipsAPI)
+
+- [Zadanie 10 EntityFramework Core - Code first](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%2010/UczelniaAPI)
