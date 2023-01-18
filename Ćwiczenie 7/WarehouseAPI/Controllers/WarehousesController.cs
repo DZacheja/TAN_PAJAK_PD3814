@@ -28,10 +28,10 @@ namespace WarehouseAPI.Controllers
                 return Ok(productID);
             } catch (NotFoundException nfx)
             {
-                return StatusCode(404, nfx.Message);
+                return StatusCode(404, nfx.Message); // Not found
             } catch (GoneException gx)
             {
-                return StatusCode(410, gx.Message);
+                return StatusCode(410, gx.Message); //Gone
             } catch (Exception ex)
             {
                 return BadRequest(ex.Message);

@@ -3,43 +3,47 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 1", "Ćwiczenie 1", "{123E3AA2-376A-4BEF-A096-6DB2F876D810}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 01", "Ćwiczenie 01", "{123E3AA2-376A-4BEF-A096-6DB2F876D810}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1 - Numer telefonu na stronie", "Ćwiczenie 1\1 - Numer telefonu na stronie\1 - Numer telefonu na stronie.csproj", "{008097C5-B66A-480A-AE18-4D6BB9E194F0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 2", "Ćwiczenie 2", "{DD09AE0A-2AEA-4956-B344-044B006E0A14}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 02", "Ćwiczenie 02", "{DD09AE0A-2AEA-4956-B344-044B006E0A14}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegacyApp", "Ćwiczenie 2\LegacyApp\LegacyApp.csproj", "{91AB18D1-431C-4B2E-BCC3-BFF3E4B7CE2B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegacyAppConsumer", "Ćwiczenie 2\LegacyAppConsumer\LegacyAppConsumer.csproj", "{3ADF82DC-CDE4-4D41-95FF-731A608EC584}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 3", "Ćwiczenie 3", "{3946D40E-4338-4B01-99E1-55280456C059}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 03", "Ćwiczenie 03", "{3946D40E-4338-4B01-99E1-55280456C059}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dziekanat", "Ćwiczenie 3\Dziekanat\Dziekanat.csproj", "{111CEDE4-0F1E-406E-A4C7-D14483E2BF02}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 4", "Ćwiczenie 4", "{0F4D955B-D038-4124-AB34-A2AC87DE3B87}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 04", "Ćwiczenie 04", "{0F4D955B-D038-4124-AB34-A2AC87DE3B87}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExample", "Ćwiczenie 4\WpfExample\WpfExample.csproj", "{1E8B194B-0648-43DE-9908-3CB84FEDADD7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 5", "Ćwiczenie 5", "{A0569998-0186-4EF9-A27D-C174F7EAA770}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 05", "Ćwiczenie 05", "{A0569998-0186-4EF9-A27D-C174F7EAA770}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsAPI", "Ćwiczenie 5\StudentsAPI\StudentsAPI.csproj", "{E7AAC336-3EB3-4E87-93AA-57E7B69046A8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 6", "Ćwiczenie 6", "{87C01F46-09AD-4B07-85F4-A2F3AF0A856D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 06", "Ćwiczenie 06", "{87C01F46-09AD-4B07-85F4-A2F3AF0A856D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAPI", "Ćwiczenie 6\AnimalAPI\AnimalAPI.csproj", "{575B2F12-952D-46CA-9386-3D7CEC0C90B8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 7", "Ćwiczenie 7", "{97899991-3AAF-4B4A-8F99-ADE7CE31E33C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 07", "Ćwiczenie 07", "{97899991-3AAF-4B4A-8F99-ADE7CE31E33C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseAPI", "Ćwiczenie 7\WarehouseAPI\WarehouseAPI.csproj", "{00A79CBC-EA54-4816-B32D-A4E9439A35FF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 8", "Ćwiczenie 8", "{35079C6E-88E8-4D6A-8980-189BED73B421}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 08", "Ćwiczenie 08", "{35079C6E-88E8-4D6A-8980-189BED73B421}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqTutorials", "Ćwiczenie 8\LinqCwiczenia2\LinqTutorials\LinqTutorials.csproj", "{4AC3EE11-0126-4153-98AC-DAA50DEF6731}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 9", "Ćwiczenie 9", "{42057708-B58F-4AC3-83DD-90CA89F4CE94}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientTripsAPI", "Ćwiczenie 9\ClientTipsAPI\ClientTripsAPI.csproj", "{58007733-9B59-48CB-923C-082AD1F31694}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 10", "Ćwiczenie 10", "{36B2DF2C-6776-4AB2-9F89-1A981F1A3BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UczelniaAPI", "Ćwiczenie 10\UczelniaAPI\UczelniaAPI.csproj", "{12BB348F-77D3-4071-9273-0FA923291F39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ćwiczenie 09", "Ćwiczenie 09", "{D7D23DC1-3B2E-4E6C-AAC3-8329937C4FA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,10 @@ Global
 		{58007733-9B59-48CB-923C-082AD1F31694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58007733-9B59-48CB-923C-082AD1F31694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58007733-9B59-48CB-923C-082AD1F31694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12BB348F-77D3-4071-9273-0FA923291F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12BB348F-77D3-4071-9273-0FA923291F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12BB348F-77D3-4071-9273-0FA923291F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12BB348F-77D3-4071-9273-0FA923291F39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,7 +109,8 @@ Global
 		{575B2F12-952D-46CA-9386-3D7CEC0C90B8} = {87C01F46-09AD-4B07-85F4-A2F3AF0A856D}
 		{00A79CBC-EA54-4816-B32D-A4E9439A35FF} = {97899991-3AAF-4B4A-8F99-ADE7CE31E33C}
 		{4AC3EE11-0126-4153-98AC-DAA50DEF6731} = {35079C6E-88E8-4D6A-8980-189BED73B421}
-		{58007733-9B59-48CB-923C-082AD1F31694} = {42057708-B58F-4AC3-83DD-90CA89F4CE94}
+		{58007733-9B59-48CB-923C-082AD1F31694} = {D7D23DC1-3B2E-4E6C-AAC3-8329937C4FA1}
+		{12BB348F-77D3-4071-9273-0FA923291F39} = {36B2DF2C-6776-4AB2-9F89-1A981F1A3BD5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E170CE59-B751-4870-AE0A-5ECF59D1FAD2}
