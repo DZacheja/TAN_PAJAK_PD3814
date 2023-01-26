@@ -21,3 +21,5 @@ Numer: PD3814
 - [Zadanie 9 EntityFramework Core - Database first](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%209/ClientTipsAPI)
 
 - [Zadanie 10 EntityFramework Core - Code first](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%2010/UczelniaAPI)
+
+- [Zadnie 11 Razor App](https://github.com/DZacheja/TAN_PAJAK_PD3814/tree/master/%C4%86wiczenie%2011/WebApppForExcercise11)
